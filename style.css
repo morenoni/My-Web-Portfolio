@@ -1,0 +1,34 @@
+
+h2 {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000; /* Black border */
+    background-color: rgb(251, 169, 225); /* Light gray background */
+    color: #533636; /* Black text */
+    font-weight: bold;
+    width: 200px; /* Set a fixed width */
+    height: 20px; /* Set a fixed height */
+    text-align: center; /* Center text horizontally */
+    line-height: 20px; /* Center text vertically */
+    width: 100%;
+    margin-left: calc(50% - 50vw); /* Pulls element to left edge */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: rgb(249, 240, 248); /* Light gray background for the body */
+    font-family: Arial, sans-serif; /* Set a default font */
+    margin: 0;
+    padding: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #333; /* Dark gray text for paragraphs */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
