@@ -2,16 +2,15 @@
 h2 {
     display: inline-block;
     padding: 10px 20px;
-    border: 2px solid #000; /* Black border */
-    background-color: rgb(251, 169, 225); /* Light gray background */
-    color: #533636; /* Black text */
+    background-color: rgb(251, 169, 225);
+    border: 1px solid #827373;
+    color: #533636; 
     font-weight: bold;
-    width: 200px; /* Set a fixed width */
-    height: 20px; /* Set a fixed height */
-    text-align: center; /* Center text horizontally */
-    line-height: 20px; /* Center text vertically */
+    width: 200px; 
+    height: 20px; 
+    line-height: 20px; 
     width: 100%;
-    margin-left: calc(50% - 50vw); /* Pulls element to left edge */
+    margin-left: calc(50% - 50vw); 
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
@@ -21,14 +20,58 @@ h1 {
 }
 
 body {
-    background-color: rgb(249, 240, 248); /* Light gray background for the body */
-    font-family: Arial, sans-serif; /* Set a default font */
+    background-color: rgb(249, 240, 248);
+    font-family: Arial, sans-serif; 
     margin: 0;
     padding: 20px;
 }
 
 p {
     font-size: 16px;
-    color: #333; /* Dark gray text for paragraphs */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333; 
+    font-family: 'Verdana', sans-serif;
+}
+
+#footer {
+    text-align: center;
+    font-size: 14px;
+    color: #666; 
+    margin-top: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#navbar {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+#navbar li {
+    margin: 0 10px; 
+}
+
+
+#navbar li a {
+    display: inline-block;
+    padding: 7px 25px;
+    background-color: rgb(192, 231, 255);
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+    border: 1px solid transparent; 
+    border-radius: 5px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 14px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, border-color 0.3s ease; 
+    border-color: #827373;
+    text-align: center;
+}
+
+#navbar li a:hover {
+    background-color: lightpink;
+    border-color: #827373;
 }
