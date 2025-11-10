@@ -2,9 +2,9 @@
 h2 {
     display: inline-block;
     padding: 10px 20px;
-    background-color: rgb(251, 169, 225);
+    background-color: rgb(125, 195, 230);
     border: 1px solid #827373;
-    color: #533636; 
+    color: #51400dfe; 
     font-weight: bold;
     width: 200px; 
     height: 20px; 
@@ -20,7 +20,7 @@ h1 {
 }
 
 body {
-    background-color: rgb(249, 240, 248);
+    background-color: rgb(240, 243, 249);
     font-family: Arial, sans-serif; 
     margin: 0;
     padding: 20px;
@@ -30,6 +30,7 @@ p {
     font-size: 16px;
     color: #333; 
     font-family: 'Verdana', sans-serif;
+    padding: 10px 60px;
 }
 
 #footer {
@@ -48,30 +49,74 @@ p {
     list-style: none;
     padding: 0;
     margin: 0; 
+    flex-wrap: nowrap;
 }
 
 #navbar li {
     margin: 0 10px; 
+    white-space: nowrap;
 }
 
 
 #navbar li a {
     display: inline-block;
     padding: 7px 25px;
+    justify-content: center;
     background-color: rgb(192, 231, 255);
     color: rgb(0, 0, 0); 
     text-decoration: none; 
     border: 1px solid transparent; 
     border-radius: 5px; 
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 14px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 16px;
     cursor: pointer; 
     transition: background-color 0.3s ease, border-color 0.3s ease; 
     border-color: #827373;
     text-align: center;
+    width: 80px;
+    justify-content: center; 
+    align-items: center;
 }
 
 #navbar li a:hover {
-    background-color: lightpink;
+    background-color: rgb(113, 221, 216);
     border-color: #827373;
+}
+
+#email-list{
+    list-style: none;
+    line-height: 2;
+}
+
+#email-list li {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+#email-list img {
+    max-width: 30px; 
+    height: auto; 
+}
+
+#social-media {
+    list-style: none;
+    line-height: 2;
+}
+
+#social-media li {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+#social-media img {
+    max-width: 30px; 
+    height: auto; 
+}
+
+#pp {
+    display: block; 
+    margin: 0 auto;
+    margin-bottom: 15px; 
 }
