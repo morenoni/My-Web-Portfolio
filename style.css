@@ -138,6 +138,17 @@ section:first-of-type {
     display: flex; 
     align-items: center; 
     gap: 10px; 
+    font-size: 13px;
+}
+
+#email-list a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+#email-list a:hover {
+    text-decoration: underline; 
+    color: #2a0a61; 
 }
 
 #email-list img {
@@ -154,11 +165,22 @@ section:first-of-type {
     display: flex; 
     align-items: center; 
     gap: 10px; 
+    font-size: 13px;
 }
 
 #social-media img {
     max-width: 30px; 
     height: auto; 
+}
+
+#social-media a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+#social-media a:hover {
+    text-decoration: underline; 
+    color: #2a0a61; 
 }
 
 #pp {
