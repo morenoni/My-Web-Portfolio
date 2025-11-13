@@ -42,29 +42,50 @@ p {
     font-family: 'Courier New', Courier, monospace;
 }
 
-
 #navbar {
-    top: 0px;
-    width: 100%; 
+    position: relative;
+    width: 100vw;       
+    left: 50%;            
+    right: 50%;
+    margin-left: -50vw;  
+    margin-right: -50vw; 
     z-index: 1000;
     background-color: rgb(240, 243, 249);
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    list-style: none; 
-    padding: 10px 0; 
-    margin: 0; 
-    box-shadow: none; 
-    color: #062c4f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0;
+    flex-wrap: wrap;
     overflow-x: auto;
 }
 
+#navbar button {
+    text-decoration: none; 
+    background-color: rgb(189, 233, 255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 10px 15px;
+    width: 120px;
+    display: block; 
+    border-width: 1px;
+    flex: 0 0 auto;      
+    white-space: nowrap; 
+    flex-wrap: wrap; 
+    border-radius: 10px;
+}
+
+#navbar button a {
+    text-decoration: none;
+    align-items: center;
+    justify-content: center; 
+}
+
 #navbar.fixed {
+    top: 0;                
+    left: 0;                 
+    right: 0;  
     position: fixed;
-    top: 0px;
-    left: 0; 
-    width: 100%; 
-    z-index: 1000;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); 
     justify-content: center; 
     align-items: center;
@@ -72,60 +93,7 @@ p {
     padding: 10px 0; 
     margin: 0;
     overflow-x: auto;
-}
-
-#navbar li {
-    margin: 0 10px; 
-    white-space: nowrap;
-}
-
-
-#navbar li a {
-    display: inline-block;
-    padding: 7px 25px;
-    justify-content: center;
-    background-color: rgb(192, 231, 255);
-    color: rgb(0, 0, 0); 
-    text-decoration: none; 
-    border: 1px solid transparent; 
-    border-radius: 5px; 
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    cursor: pointer; 
-    transition: background-color 0.3s ease, border-color 0.3s ease; 
-    border-color: #827373;
-    text-align: center;
-    width: 85px;
-    justify-content: center; 
-    align-items: center;
-}
-
-#navbar li a:hover {
-    background-color: rgb(113, 221, 216);
-    border-color: #827373;
-}
-
-@media (max-width: 768px) {
-    #navbar {
-        flex-wrap: wrap; 
-        padding: 10px; 
-        row-gap: 15px; 
-    }
-
-    #navbarfixed {
-        flex-wrap: wrap; 
-        padding: 10px; 
-        row-gap: 15px; 
-    }
-
-    #navbar li {
-        margin: 5px;
-    }
-
-    #navbar li a {
-        font-size: 14px; 
-        padding: 8px 12px;
-    }
+    width: 100%;
 }
 
 section {
