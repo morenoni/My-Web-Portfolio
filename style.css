@@ -187,4 +187,39 @@ section:first-of-type {
     display: block; 
     margin: 0 auto;
     margin-bottom: 15px; 
-}
+    max-width: 100%; 
+    height: auto; 
+    }
+    
+    .rectangle {
+    width: 90%; 
+    max-width: 300px; 
+    background-color: rgb(119, 204, 247);
+    border: 1px solid #827373;
+    margin: 10px auto;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    }
+    
+    .rectangle p {
+    padding: 10px  20px;
+    color: #062c4f; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .rectangle button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+    background-color: rgb(113, 221, 216);
+    border: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    
+    }
+    
+    .rectangle a {
+    text-decoration: none;
+    }
