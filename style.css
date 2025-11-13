@@ -44,7 +44,6 @@ p {
 
 
 #navbar {
-    position: relative; 
     top: 0px;
     width: 100%; 
     z-index: 1000;
@@ -62,12 +61,48 @@ p {
 
 #navbar.fixed {
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0; 
     width: 100%; 
+    z-index: 1000;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); 
     justify-content: center; 
-    align-items: center; 
+    align-items: center;
+    list-style: none; 
+    padding: 10px 0; 
+    margin: 0;
+    overflow-x: auto;
+}
+
+#navbar li {
+    margin: 0 10px; 
+    white-space: nowrap;
+}
+
+
+#navbar li a {
+    display: inline-block;
+    padding: 7px 25px;
+    justify-content: center;
+    background-color: rgb(192, 231, 255);
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+    border: 1px solid transparent; 
+    border-radius: 5px; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, border-color 0.3s ease; 
+    border-color: #827373;
+    text-align: center;
+    width: 85px;
+    justify-content: center; 
+    align-items: center;
+}
+
+#navbar li a:hover {
+    background-color: rgb(113, 221, 216);
+    border-color: #827373;
 }
 
 @media (max-width: 768px) {
@@ -101,36 +136,6 @@ section:first-of-type {
     transition: margin-top 0.3s ease; 
 }
 
-#navbar li {
-    margin: 0 10px; 
-    white-space: nowrap;
-}
-
-
-#navbar li a {
-    display: inline-block;
-    padding: 7px 25px;
-    justify-content: center;
-    background-color: rgb(192, 231, 255);
-    color: rgb(0, 0, 0); 
-    text-decoration: none; 
-    border: 1px solid transparent; 
-    border-radius: 5px; 
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    cursor: pointer; 
-    transition: background-color 0.3s ease, border-color 0.3s ease; 
-    border-color: #827373;
-    text-align: center;
-    width: 85px;
-    justify-content: center; 
-    align-items: center;
-}
-
-#navbar li a:hover {
-    background-color: rgb(113, 221, 216);
-    border-color: #827373;
-}
 
 #email-list{
     list-style: none;
